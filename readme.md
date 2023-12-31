@@ -1,4 +1,5 @@
-## CursusDB Python Native Client Module
+## CursusDB Python Native Client Package
+Will soon be available on PyPI.
 
 Importing package
 ``` 
