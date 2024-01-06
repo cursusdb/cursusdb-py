@@ -1,5 +1,9 @@
 ## CursusDB Python Native Client Package
-Will soon be available on PyPI.
+pip
+```
+pip install cursusdb
+```
+
 
 Importing package
 ``` 
