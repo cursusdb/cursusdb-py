@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='cursusdb-py',
-    version='1.0',
+    name='cursusdb',
+    version='1.1.0',
+    description='Official CursusDB Native Client for Python',
     packages=find_packages(),
     install_requires=[]
 )

@@ -20,6 +20,7 @@
 import base64
 import socket
 
+
 # CursusDB Cluster Client Class
 class Client:
     def __init__(self, host, port, username, password, tls):
@@ -36,7 +37,7 @@ class Client:
             context = ssl.create_default_context()
             context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
             self.sock = context.wrap_socket(socket.socket(socket.AF_INET), server_hostname=self.host)
-            
+
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.connect((self.host, self.port))
         auth_str = f"{self.username}\\0{self.password}".encode("utf8")

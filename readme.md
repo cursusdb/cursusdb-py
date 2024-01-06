@@ -3,7 +3,7 @@ Will soon be available on PyPI.
 
 Importing package
 ``` 
-from cursusdb-py import Client
+from cursusdb import Client
 ```
 
 Using 
@@ -12,6 +12,6 @@ Using
 c = Client("0.0.0.0", 7681, "username", "password", False)
 print(c.connect())
 
-print(c.query("select count from tweets;"))
+print(c.query("ping;"))
 c.close()
 ```
